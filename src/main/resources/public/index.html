@@ -3,8 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <title>WebSockets-EchoServer</title>
+<script src="script.js" ></script>
 </head>
 <body>
-	<h1>Hello World</h1>
+	<h1>Chat Room</h1>
+	<div id="messages" style="height: 200pt; overflow-y: scroll;"></div>
+	<div id="chatForm">
+		<form>
+			<input id="textBox" type="text">
+			<input type="button" onclick="sendFromTextBox()" value="Send">
+		</form>
+	</div>
 </body>
 </html>
